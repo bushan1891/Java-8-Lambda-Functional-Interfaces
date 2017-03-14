@@ -7,6 +7,13 @@ public class User {
 	String email;
 	String phone;
 
+	public User(){
+		this.id=(int) (Math.random()*100);
+		this.email = "Id_"+this.id+"@gmail.com";
+		this.phone= "0000000000";
+	}
+	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -80,5 +87,17 @@ public class User {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	
+	public String printUser(User s){
+		return s.toString();
+	}
+	
+	public static String staticMethod(){
+		return " I am Static method"; 
+	}
+	
+	public static boolean  staticMethodtwo(String s){
+		return false; 
 	}
 }

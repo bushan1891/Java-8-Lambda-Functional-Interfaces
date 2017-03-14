@@ -35,7 +35,7 @@ public class RegularExpression {
 		boolean test = Pattern.matches(emailReg, "bushan@gmail.com");
 		
 		boolean isMatch = match.matches();
-		System.out.println(isMatch);
+		System.out.println(isMatch); 
 		System.out.println(test);
 		
 	}
